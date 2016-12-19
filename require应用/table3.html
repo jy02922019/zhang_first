@@ -1,0 +1,20 @@
+<script type="text/html" id="thiredTmp">
+	<div class="center" id="mylazy">
+			<%for(var n=0;n<Date.length;n++){%>
+			<div class="main_box">
+				<figure>
+					<img data-original=<%=Date[n].img%> alt="" class="lazy">
+					<figcaption>
+						<p><%=Date[n].name%></p>
+						<p><span>精选</span><b>买一送一</b></p>
+						<p>200g</p>
+						<p>￥<%=Date[n].partner_price%><strike>￥<%=Date[n].market_price%></strike></p>
+					</figcaption>
+					<a href=""><div class="box_footer">
+								+
+							</div></a>
+				</figure>
+			</div>
+			<%}%>
+	</div>
+</script>

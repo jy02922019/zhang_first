@@ -1,0 +1,80 @@
+<script type="text/html" id="secondTmp">
+<!-- 头部 -->
+	<div id="quickly_header">
+	<div class="header_left">
+			<p>北京市政府<span>▼</span></p>
+	</div>
+		<figure>
+			<img src="img/header.png" alt="">
+			<figcaption>
+				<p>搜索</p>
+			</figcaption>
+		</figure>
+	</div>
+	<div id="quickly_main">
+		<div class="main_left">
+		<%for(var n=0;n<data.categories.length;n++){%>
+			<div class="box1" id=<%=data.categories[n].id%>>
+				<p><%=data.categories[n].name%></p>
+			</div>
+		<%}%>	
+			
+		</div>
+		<div class="main_right">
+			<div class="top">
+				<div class="top_one">全部分类</div>
+				<div class="top_two">综合排序</div>
+			</div>
+			<div id="quickly_line2"></div>
+			<div class="center" id="mylazy">
+			<%for(var n=0;n<data.products[104749].length;n++){%>
+			<div class="main_box">
+				<figure>
+					<img data-original=<%=data.products[104749][n].img%> alt="" class="lazy">
+					<figcaption>
+						<p><%=data.products[104749][n].name%></p>
+						<p><span>精选</span><b>买一送一</b></p>
+						<p>200g</p>
+						<p>￥<%=data.products[104749][n].partner_price%><strike>￥<%=data.products[104749][n].market_price%></strike></p>
+					</figcaption>
+					<a href=""><div class="box_footer">
+								+
+							</div></a>
+				</figure>
+			</div>
+			<%}%>
+			</div>
+		</div>
+	</div>
+	<div id="quickly_line"></div>
+
+	<div id="quickly_footer">
+		<figure><a href="homePage.html">
+			<img src="img/shopping3.png" alt="">
+			<figcaption>
+				<p>首页</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="">
+			<img src="img/quickly4.png" alt="" class="img2">
+			<figcaption>
+				<p>闪送超市</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="shopping.html">
+			<img src="img/footer3.png" alt="">
+			<span class="num">3</span>
+			<figcaption>
+				<p>购物车</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="myself.html">
+			<img src="img/footer4.png" alt="">
+			<figcaption>
+				<p>我的</p>
+			</figcaption>
+		</a></figure>
+	</div>
+
+	<div id="myboxthree"></div>
+</script>	

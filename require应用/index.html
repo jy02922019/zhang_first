@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script data-main = "app.js" type="text/javascript" src = "js/require.js"></script>
+	<script type="text/javascript">
+			(function (doc, win) {
+			  var docEl = doc.documentElement,
+			    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			    recalc = function () {
+			      var clientWidth = docEl.clientWidth;
+			      if (!clientWidth) return;
+			      docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+			    };
+			  if (!doc.addEventListener) return;
+			  win.addEventListener(resizeEvt, recalc, false);
+			  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+	</script>
+	
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+	<div class="header_left">
+			<p>北京市政府<span>▼</span></p>
+	</div>
+		<figure>
+			<a href="search.html"><img src="img/header.png" alt=""></a>
+			<figcaption>
+				<p>搜索</p>
+			</figcaption>
+		</figure>
+	</div>
+
+	<!-- 容器 -->
+	<div id="index_main">
+			<div class = "home"></div>
+			<div class = "quickly"></div>
+			<div class = "shopping"></div>
+			<div class = "mine"></div>
+	</div>
+	
+
+
+	<!-- 脚部 -->
+	<div id="footer">
+		<figure><a href="#home" class="footerOne">
+			<img src="img/footer1.png" alt="" class="img1">
+			<figcaption>
+				<p>首页</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="#quickly" class="footerTwo">
+			<img src="img/footer2.png" alt="" class="img2">
+			<figcaption>
+				<p>闪送超市</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="#shopping" class="footerThree">
+			<img src="img/footer3.png" alt="" class="img3">
+			<span class="num"></span>
+			<figcaption>
+				<p>购物车</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="#mine" class="footerFour">
+			<img src="img/footer4.png" alt="" class="img4">
+			<figcaption>
+				<p>我的</p>
+			</figcaption>
+		</a></figure>
+	</div>
+
+	
+	
+</body>
+
+</html>

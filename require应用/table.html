@@ -1,0 +1,344 @@
+<script id="firstTmp" type="text/html">
+<!-- 头部 -->
+	<div id="header">
+	<div class="header_left">
+			<p>北京市政府<span>▼</span></p>
+	</div>
+		<figure>
+			<a href="search.html"><img src="img/header.png" alt=""></a>
+			<figcaption>
+				<p>搜索</p>
+			</figcaption>
+		</figure>
+	</div>
+	<div id="position">
+<!-- 广告 -->
+	<div id="nav">
+		
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+    		<%for(var n=0;n<data.act_info[0].act_rows.length;n++){%>
+			    <div class="swiper-slide"><img src=<%=data.act_info[0].act_rows[n].activity.img%> alt=""></div>
+			  
+			    <%}%>
+    		</div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
+
+	</div>
+<!-- 导航 -->
+	<div id="banner">
+		<div class="banner_top">
+		<%for(var n=0;n<data.act_info[1].act_rows.length;n++){%>
+			<figure><a href="insane.html">
+				<img src=<%=data.act_info[1].act_rows[n].activity.img%> alt="">
+				<figcaption>
+					<p><%=data.act_info[1].act_rows[n].activity.name%></p>
+				</figcaption>
+				</a>
+			</figure>
+			<%}%>
+		</div>
+		<div class="banner_bottom">
+		<%for(var n=0;n<data.act_info[3].act_rows.length-2;n++){%>
+			<div class="banner_img">
+					<img src=<%=data.act_info[3].act_rows[n].activity.img%> alt="">
+			</div>
+		<%}%>	
+		</div>
+	</div>
+	<!-- 主体 -->
+	<div id="main">
+	<!-- 主题头部引导页 -->
+		<div class="main_top">
+			<div class="top">
+			<img src=<%=data.act_info[4].act_rows[0].act_rows[0].chead_detail.img%> alt="">
+			</div>
+			<div class="banner">
+				<div class="left">
+					<img src=<%=data.act_info[4].act_rows[1].act_rows[0].cactivity_detail.img%> alt="">
+				</div>
+				<div class="right">
+					<img src=<%=data.act_info[4].act_rows[1].act_rows[1].cactivity_detail.img%> alt="">
+				</div>
+			</div>
+
+			<div class="nav">
+				<%for(var n=0;n<data.act_info[4].act_rows[2].act_rows.length;n++){%>
+				<div class="nav1">
+					<figure>
+						<img src=<%=data.act_info[4].act_rows[2].act_rows[n].cicons_detail.img%> alt="">
+						<figcaption>
+								<p><%=data.act_info[4].act_rows[2].act_rows[n].cicons_detail.name%></p>
+						</figcaption>
+					</figure>
+				</div>
+				<%}%>
+			</div>
+
+			<div class="main">
+				<div class="main1">
+					<img src=<%=data.act_info[4].act_rows[3].act_rows[0].activity.img%> alt="">
+				</div>
+				<div class="main1">
+					<img src=<%=data.act_info[4].act_rows[3].act_rows[1].activity.img%> alt="">
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="bottom1">
+					<img src=<%=data.act_info[4].act_rows[3].act_rows[2].activity.img%> alt="">
+				</div>
+				<div class="bottom1">
+					<img src=<%=data.act_info[4].act_rows[3].act_rows[3].activity.img%> alt="">
+				</div>
+			</div>
+		</div>
+<!-- 主题盒子模型 -->
+		<div class="main_center">
+			<div class="box1_top1">
+				<div class="box1_left">
+					<h3><%=data.act_info[5].act_rows[0].category_detail.name%></h3>
+				</div>
+				<div class="box1_right">
+					<p>更多</p>
+				</div>
+			</div>
+
+			<div class="box1_banner">
+				<img src=<%=data.act_info[5].act_rows[0].activity.img%> alt="">
+			</div>
+
+			<div class="box1_main">
+				<div class="box1_mainline">
+				<%for(var n=0;n<data.act_info[5].act_rows[0].category_detail.goods.length;n++){%>
+				<div class="box1_main1">
+					<figure>
+						<img src=<%=data.act_info[5].act_rows[0].category_detail.goods[n].img%> alt="">
+						<figcaption>
+							<p><%=data.act_info[5].act_rows[0].category_detail.goods[n].name%></p>
+							<p><span>精选</span></p>
+							<p><%=data.act_info[5].act_rows[0].category_detail.goods[n].specifics%></p>
+							<p>￥<%=data.act_info[5].act_rows[0].category_detail.goods[n].partner_price%><strike>￥<%=data.act_info[5].act_rows[0].category_detail.goods[n].market_price%></strike></p>
+						</figcaption>
+							<a href=""><div class="box1_footer">
+								+
+							</div></a>
+					</figure>
+				</div>
+				<%}%>
+			
+				</div>
+			</div>
+			
+			<div id="line"></div>
+			<div class="box1_top2">
+				<div class="box1_left">
+					<h3><%=data.act_info[5].act_rows[1].category_detail.name%></h3>
+				</div>
+				<div class="box1_right">
+					<p>更多</p>
+				</div>
+			</div>
+
+			<div class="box1_banner">
+				<img src=<%=data.act_info[5].act_rows[1].activity.img%> alt="">
+			</div>
+
+			<div class="box1_main">
+				<div class="box1_mainline">
+				<%for(var n=0;n<data.act_info[5].act_rows[1].category_detail.goods.length;n++){%>
+				<div class="box1_main1">
+					<figure>
+						<img src=<%=data.act_info[5].act_rows[1].category_detail.goods[n].img%> alt=""> 
+						<figcaption>
+							<p><%=data.act_info[5].act_rows[1].category_detail.goods[n].name%></p>
+							<p><span>精选</span><b>买一送一</b></p>
+							<p><%=data.act_info[5].act_rows[1].category_detail.goods[n].specifics%></p>
+							<p>￥<%=data.act_info[5].act_rows[1].category_detail.goods[n].partner_price%><strike>￥<%=data.act_info[5].act_rows[1].category_detail.goods[n].market_price%></strike> </p>
+						</figcaption>
+							<a href=""><div class="box1_footer">
+								+
+							</div></a>
+					</figure>
+				</div>
+				<%}%>
+				
+				</div>
+			</div>
+
+				<div id="line"></div>
+			<div class="box1_top3">
+				<div class="box1_left">
+					<h3><%=data.act_info[5].act_rows[2].category_detail.name%></h3>
+				</div>
+				<div class="box1_right">
+					<p>更多</p>
+				</div>
+			</div>
+
+			<div class="box1_banner">
+				<img src=<%=data.act_info[5].act_rows[2].activity.img%> alt="">
+			</div>
+
+			<div class="box1_main">
+				<div class="box1_mainline">
+					<%for(var n=0;n<data.act_info[5].act_rows[2].category_detail.goods.length;n++){%>
+				<div class="box1_main1">
+					<figure>
+						<img src=<%=data.act_info[5].act_rows[2].category_detail.goods[n].img%> alt=""> 
+						<figcaption>
+							<p><%=data.act_info[5].act_rows[2].category_detail.goods[n].name%></p>
+							<p><span>精选</span></p>
+							<p><%=data.act_info[5].act_rows[2].category_detail.goods[n].specifics%></p>
+							<p>￥<%=data.act_info[5].act_rows[2].category_detail.goods[n].partner_price%><strike>￥<%=data.act_info[5].act_rows[2].category_detail.goods[n].market_price%></strike> </p>
+						</figcaption>
+							<a href=""><div class="box1_footer">
+								+
+							</div></a>
+					</figure>
+				</div>
+				<%}%>
+				
+				</div>
+			</div>
+
+				<div id="line"></div>
+			<div class="box1_top4">
+				<div class="box1_left">
+					<h3><%=data.act_info[5].act_rows[3].category_detail.name%></h3>
+				</div>
+				<div class="box1_right">
+					<p>更多</p>
+				</div>
+			</div>
+
+			<div class="box1_banner">
+				<img src=<%=data.act_info[5].act_rows[3].activity.img%> alt="">
+			</div>
+
+			<div class="box1_main">
+				<div class="box1_mainline">
+					<%for(var n=0;n<data.act_info[5].act_rows[3].category_detail.goods.length;n++){%>
+				<div class="box1_main1">
+					<figure>
+						<img src=<%=data.act_info[5].act_rows[3].category_detail.goods[n].img%> alt=""> 
+						<figcaption>
+							<p><%=data.act_info[5].act_rows[3].category_detail.goods[n].name%></p>
+							<p><span>精选</span></p>
+							<p><%=data.act_info[5].act_rows[3].category_detail.goods[n].specifics%></p>
+							<p>￥<%=data.act_info[5].act_rows[3].category_detail.goods[n].partner_price%><strike>￥<%=data.act_info[5].act_rows[3].category_detail.goods[n].market_price%></strike> </p>
+						</figcaption>
+							<a href=""><div class="box1_footer">
+								+
+							</div></a>
+					</figure>
+				</div>
+				<%}%>
+				</div>
+			</div>
+
+				<div id="line"></div>
+			<div class="box1_top4">
+				<div class="box1_left">
+					<h3><%=data.act_info[5].act_rows[4].category_detail.name%></h3>
+				</div>
+				<div class="box1_right">
+					<p>更多</p>
+				</div>
+			</div>
+
+			<div class="box1_banner">
+				<img src=<%=data.act_info[5].act_rows[4].activity.img%> alt="">
+			</div>
+
+			<div class="box1_main">
+				<div class="box1_mainline">
+				<%for(var n=0;n<data.act_info[5].act_rows[4].category_detail.goods.length;n++){%>
+				<div class="box1_main1">
+					<figure>
+						<img src=<%=data.act_info[5].act_rows[4].category_detail.goods[n].img%> alt=""> 
+						<figcaption>
+							<p><%=data.act_info[5].act_rows[4].category_detail.goods[n].name%></p>
+							<p><span>精选</span></p>
+							<p><%=data.act_info[5].act_rows[4].category_detail.goods[n].specifics%></p>
+							<p>￥<%=data.act_info[5].act_rows[4].category_detail.goods[n].partner_price%><strike>￥<%=data.act_info[5].act_rows[4].category_detail.goods[n].market_price%></strike> </p>
+						</figcaption>
+							<a href=""><div class="box1_footer">
+								+
+							</div></a>
+					</figure>
+				</div>
+				<%}%>
+				</div>
+			</div>
+
+				<div id="line"></div>
+			<div class="box1_top2">
+				<div class="box1_left">
+					<h3><%=data.act_info[5].act_rows[5].category_detail.name%></h3>
+				</div>
+				<div class="box1_right">
+					<p>更多</p>
+				</div>
+			</div>
+
+			<div class="box1_banner">
+				<img src=<%=data.act_info[5].act_rows[5].activity.img%> alt="">
+			</div>
+
+			<div class="box1_main">
+				<div class="box1_mainline">
+				<%for(var n=0;n<data.act_info[5].act_rows[5].category_detail.goods.length;n++){%>
+				<div class="box1_main1">
+					<figure>
+						<img src=<%=data.act_info[5].act_rows[5].category_detail.goods[n].img%> alt=""> 
+						<figcaption>
+							<p><%=data.act_info[5].act_rows[5].category_detail.goods[n].name%></p>
+							<p><span>精选</span></p>
+							<p><%=data.act_info[5].act_rows[5].category_detail.goods[n].specifics%></p>
+							<p>￥<%=data.act_info[5].act_rows[5].category_detail.goods[n].partner_price%><strike>￥<%=data.act_info[5].act_rows[5].category_detail.goods[n].market_price%></strike> </p>
+						</figcaption>
+							<a href=""><div class="box1_footer">
+								+
+							</div></a>
+					</figure>
+				</div>
+				<%}%>
+				</div>
+			</div>
+		</div>
+		<div id="footer_line"></div>
+	</div>
+	</div>
+<!-- 脚部 -->
+	<div id="footer">
+		<figure><a href="">
+			<img src="img/footer1.png" alt="">
+			<figcaption>
+				<p>首页</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="quickly.html">
+			<img src="img/footer2.png" alt="" class="img2">
+			<figcaption>
+				<p>闪送超市</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="shopping.html">
+			<img src="img/footer3.png" alt="">
+			<span class="num"></span>
+			<figcaption>
+				<p>购物车</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="myself.html">
+			<img src="img/footer4.png" alt="">
+			<figcaption>
+				<p>我的</p>
+			</figcaption>
+		</a></figure>
+	</div>
+
+</script>

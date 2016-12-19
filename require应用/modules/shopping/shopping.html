@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/shopping.css"> -->
+	<script type="text/javascript">
+			(function (doc, win) {
+			  var docEl = doc.documentElement,
+			    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			    recalc = function () {
+			      var clientWidth = docEl.clientWidth;
+			      if (!clientWidth) return;
+			      docEl.style.fontSize = 100 * (clientWidth / 414) + 'px';
+			    };
+			  if (!doc.addEventListener) return;
+			  win.addEventListener(resizeEvt, recalc, false);
+			  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+	</script>
+</head>
+<body>
+	<div id="shopping_header">
+		<p>购物车</p>
+	</div>
+	<div id="shopping_position">
+	<div id="shopping_nav">
+		<table>
+			<tr>
+				<td class="mytd">收 货 人</td>
+				<td class="mytd2">张博文 先生</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="mytd">电 话</td>
+				<td class="mytd2"><b>18392046620</b></td>
+				<td class="mytd3">修改</td>
+			</tr>
+			<tr>
+				<td class="mytd">收 货 地 址</td>
+				<td class="mytd2">北京市北京市政府<b>616</b></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<div id="shopping_line"></div>
+	<div id="shopping_banner">
+		<div class="mybanner">
+			<span>闪送超市</span>
+			<span>凑单专区</span>
+			<p>￥0起送，22:00前满￥30免运费,22:00后满￥69免运费</p>
+		</div>
+	</div>
+	<div id="shopping_main">
+		<div class="main_top">
+			<p>
+				<span>收货时间</span>
+				<span>一小时送达</span>
+				<span>可预订</span>
+			</p>
+		</div>
+		<div class="main_top2">
+			<p>
+				<span>收货备注</span>
+				<input type="text" placeholder="可输入100字以内特殊要求内容">
+			</p>
+		</div>
+		<div class="main_center">
+			<figure>
+				<img src="img/shopping1.jpg" alt="" class="myimg">
+				<figcaption>
+					<p>农夫山泉饮用天然水</p>
+					<p>￥1.5</p>
+				</figcaption>
+			</figure>
+			<div class="add">
+				<a href=""><img src="img/reduce.jpg" alt=""></a>
+				<span>1</span>
+				<a href=""><img src="img/add.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="main_center">
+			<figure>
+				<img src="img/shopping4.jpg" alt="" class="myimg">
+				<figcaption>
+					<p>屈臣氏蒸馏水</p>
+					<p>￥3</p>
+				</figcaption>
+			</figure>
+			<div class="add">
+				<a href=""><img src="img/reduce.jpg" alt=""></a>
+				<span>1</span>
+				<a href=""><img src="img/add.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="main_center">
+			<figure>
+				<img src="img/shopping5.jpg" alt="" class="myimg">
+				<figcaption>
+					<p>农夫柠檬红茶茶T饮料</p>
+					<p>￥5</p>
+				</figcaption>
+			</figure>
+			<div class="add">
+				<a href=""><img src="img/reduce.jpg" alt=""></a>
+				<span>1</span>
+				<a href=""><img src="img/add.jpg" alt=""></a>
+			</div>
+		</div>
+
+		<div class="main_bottom">
+			<p>
+			<span>全选</span>
+			<span>共： <b>￥25.5</b></span>
+			<span><a href="">选好了</a></span>
+			</p>
+		</div>
+	</div>
+
+	<div id="shopping_line"></div>
+	<div id="shopping_line2"></div>
+	</div>
+
+	<!-- <div id="shopping_footer">
+		<figure><a href="homePage.html">
+			<img src="img/shopping3.png" alt="">
+			<figcaption>
+				<p>首页</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="quickly.html">
+			<img src="img/footer2.png" alt="" class="img2">
+			<figcaption>
+				<p>闪送超市</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="">
+			<img src="img/shopping2.png" alt="">
+			<span class="num">3</span>
+			<figcaption>
+				<p>购物车</p>
+			</figcaption>
+		</a></figure>
+		<figure><a href="myself.html">
+			<img src="img/footer4.png" alt="">
+			<figcaption>
+				<p>我的</p>
+			</figcaption>
+		</a></figure>
+	</div> -->
+</body>
+</html>
