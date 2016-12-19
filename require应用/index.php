@@ -1,3 +1,9 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wx73badcb315510649", "43de74474101092caf78dcb50579e0a7");
+$signPackage = $jssdk->GetSignPackage();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,6 +12,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script data-main = "app.js" type="text/javascript" src = "js/require.js"></script>
 	<script type="text/javascript">
 			(function (doc, win) {
@@ -77,7 +84,50 @@
 	</div>
 
 	
-	
+	<script type="text/javascript">
+		wx.config({
+		    debug: true,
+		    appId: '<?php echo $signPackage["appId"];?>',
+		    timestamp: <?php echo $signPackage["timestamp"];?>,
+		    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+		    signature: '<?php echo $signPackage["signature"];?>',
+		     jsApiList: [
+		        'checkJsApi',
+		        'onMenuShareWeibo',
+		        'onMenuShareQZone',
+		        'hideMenuItems',
+		        'showMenuItems',
+		        'hideAllNonBaseMenuItem',
+		        'showAllNonBaseMenuItem',
+		        'translateVoice',
+		        'startRecord',
+		        'stopRecord',
+		        'onVoiceRecordEnd',
+		        'playVoice',
+		        'onVoicePlayEnd',
+		        'pauseVoice',
+		        'stopVoice',
+		        'uploadVoice',
+		        'downloadVoice',
+		        'chooseImage',
+		        'previewImage',
+		        'uploadImage',
+		        'downloadImage',
+		        'getNetworkType',
+		        'openLocation',
+		        'getLocation',
+		        'hideOptionMenu',
+		        'showOptionMenu',
+		        'closeWindow',
+		        'scanQRCode',
+		        'chooseWXPay',
+		        'openProductSpecificView',
+		        'addCard',
+		        'chooseCard',
+		        'openCard'
+		      ]
+		  });
+	</script>
 </body>
 
 </html>
