@@ -1,0 +1,73 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	width: 4.14rem;
+	font-size: 0.12rem;
+	font-family: 微软雅黑,microsoft yahei;
+	margin: 0 auto;
+	background: #efefef;
+}
+img{
+	border: none;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#search_header{
+	width: 4.14rem;
+	height: 0.6rem;
+	display: flex;
+	border-bottom: 1px solid #aaa;
+	background: white;
+}
+#search_header .header_left img{
+	width: 0.35rem;
+	height: 0.35rem;
+}
+#search_header .header_left{
+	margin: auto;
+}
+#search_header .header_center input{
+	width: 2.55rem;
+	height: 0.4rem;
+	font-size: 0.14rem;
+	outline: none;
+	background: url(../img/header.png) no-repeat 0.1rem center;
+	background-size: 0.2rem,0.2rem;
+	border-radius: 0.1rem;
+	text-indent: 0.4rem;
+}
+#search_header .header_center{
+	/*line-height: 60px;*/
+	margin: auto;
+}
+#search_header .header_right{
+	font-size: 0.16rem;
+	margin: auto;
+}
+#search_main .mymain{
+	margin: 0.33rem 0 0.38rem 0.2rem;
+}
+#search_main p{
+	font-size: 0.14rem;
+	color: #888;
+	text-indent: 0.05rem;
+}
+#search_main span{
+	display: inline-block;
+	height: 0.43rem;
+	border: 1px solid white;
+	border-radius: 0.2rem;
+	text-align: center;
+	background: white;
+	padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+	margin: 0.08rem 0.13rem 0.05rem 0;
+	font-size: 0.14rem;
+}
