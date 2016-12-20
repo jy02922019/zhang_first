@@ -31,10 +31,10 @@ $signPackage = $jssdk->GetSignPackage();
 	
 </head>
 <body>
-	<!-- 头部
+	<!-- 头部 -->
 	<div id="header">
 	<div class="header_left">
-			<p>北京市政府<span>▼</span></p>
+			<p>北京市政府<button onclick="f3()">▼</button></p>
 	</div>
 		<figure>
 			<a href="search.html"><img src="img/header.png" alt=""></a>
@@ -44,7 +44,7 @@ $signPackage = $jssdk->GetSignPackage();
 		</figure>
 	</div>
 	
-	容器
+	<!-- 容器 -->
 	<div id="index_main">
 			<div class = "home"></div>
 			<div class = "quickly"></div>
@@ -54,7 +54,7 @@ $signPackage = $jssdk->GetSignPackage();
 	
 	
 	
-	脚部
+	<!-- 脚部 -->
 	<div id="footer">
 		<figure><a href="#home" class="footerOne">
 			<img src="img/footer1.png" alt="" class="img1">
@@ -81,7 +81,7 @@ $signPackage = $jssdk->GetSignPackage();
 				<p>我的</p>
 			</figcaption>
 		</a></figure>
-	</div> -->
+	</div>
 	
 	<button onclick="f1()">获取地理位置</button>
 	<button onclick="f2()">查看地理位置</button>
@@ -130,7 +130,7 @@ $signPackage = $jssdk->GetSignPackage();
 		      ]
 		  });
 
-			var latitude =0,longitude =0;
+	/*		var latitude =0,longitude =0;
 		function f1(){
 			wx.getLocation({
 		    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
@@ -152,6 +152,10 @@ $signPackage = $jssdk->GetSignPackage();
 			    scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
 			    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 			});
+		}*/
+
+		function f3(){
+			console.log(1);
 		}
 		
 	</script>
