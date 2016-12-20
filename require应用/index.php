@@ -34,7 +34,7 @@ $signPackage = $jssdk->GetSignPackage();
 	<!-- 头部 -->
 	<div id="header">
 	<div class="header_left">
-			<p>北京市政府<span>▼</span></p>
+			<p>北京市政府<span><button onclick="f1">▼</button></span></p>
 	</div>
 		<figure>
 			<a href="search.html"><img src="img/header.png" alt=""></a>
@@ -128,7 +128,8 @@ $signPackage = $jssdk->GetSignPackage();
 		      ]
 		  });
 
-		wx.getLocation({
+		function f1(){
+			wx.getLocation({
 		    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
 		    success: function (res) {
 		        var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
@@ -137,6 +138,8 @@ $signPackage = $jssdk->GetSignPackage();
 		        var accuracy = res.accuracy; // 位置精度
 		    }
 		});
+		}
+		
 	</script>
 </body>
 
