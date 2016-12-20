@@ -153,10 +153,6 @@ $signPackage = $jssdk->GetSignPackage();
 			    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 			});
 		}*/
-
-		function f3(){
-			console.log(1);
-		}
 		
 	</script>
 </body>
