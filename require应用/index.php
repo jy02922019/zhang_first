@@ -34,7 +34,7 @@ $signPackage = $jssdk->GetSignPackage();
 	<!-- 头部 -->
 	<div id="header">
 	<div class="header_left">
-			<p>北京市政府<button onclick="f3()">▼</button></p>
+			<p>北京市政府<span>▼</span></p>
 	</div>
 		<figure>
 			<a href="search.html"><img src="img/header.png" alt=""></a>
