@@ -31,10 +31,10 @@ $signPackage = $jssdk->GetSignPackage();
 	
 </head>
 <body>
-	<!-- 头部 -->
+	<!-- 头部
 	<div id="header">
 	<div class="header_left">
-			<p>北京市政府<span><button onclick="f1">▼</button></span></p>
+			<p>北京市政府<span>▼</span></p>
 	</div>
 		<figure>
 			<a href="search.html"><img src="img/header.png" alt=""></a>
@@ -43,8 +43,8 @@ $signPackage = $jssdk->GetSignPackage();
 			</figcaption>
 		</figure>
 	</div>
-
-	<!-- 容器 -->
+	
+	容器
 	<div id="index_main">
 			<div class = "home"></div>
 			<div class = "quickly"></div>
@@ -52,9 +52,9 @@ $signPackage = $jssdk->GetSignPackage();
 			<div class = "mine"></div>
 	</div>
 	
-
-
-	<!-- 脚部 -->
+	
+	
+	脚部
 	<div id="footer">
 		<figure><a href="#home" class="footerOne">
 			<img src="img/footer1.png" alt="" class="img1">
@@ -81,8 +81,9 @@ $signPackage = $jssdk->GetSignPackage();
 				<p>我的</p>
 			</figcaption>
 		</a></figure>
-	</div>
-
+	</div> -->
+	
+	<button onclick="f1">获取地理位置</button>
 	
 	<script type="text/javascript">
 		wx.config({
@@ -137,7 +138,7 @@ $signPackage = $jssdk->GetSignPackage();
 		        var speed = res.speed; // 速度，以米/每秒计
 		        var accuracy = res.accuracy; // 位置精度
 		    }
-		});
+			});
 		}
 		
 	</script>
